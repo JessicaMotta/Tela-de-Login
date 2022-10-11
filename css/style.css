@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* adicionando imagem e estilização do corpo do site */
+body{
+    background-image: url("../imagens/Imagem-fundo.png");
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+}
+div#corpo-form h1, div#corpo-form-cadastro h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+
+/* alinhando form um abaixo do outro/input */
+input{
+    display: block;
+    height: 55px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 13pt;
+    font-style: italic;
+    padding: 10px 20px;
+    color: white;
+
+    /* formatando inputs para transparente */
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+/* adicionando um fundo ao formulário */
+div#corpo-form-login{
+    width: 420px;
+    margin: 130px auto 0px auto; /* centralizando formulário */
+}
+div#corpo-form-cadastro{
+    width: 420px;
+    margin: 80px auto 0px auto; /* centralizando formulário */
+}
+
+/* formatando o link (tag a) */
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    display: block;
+}
+/* estilizando ao passar o mouse */
+a:hover{
+    text-decoration: underline;
+}
+input[type=submit]{
+    background-color: #0b57d0;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* placeholder branco */
+::-webkit-input-placeholder{
+	color: #fff;
+}
+::-moz-placeholder{
+	color: #fff;
+}
+
+/*Customizando alertas no cadastro: */
+div#msg-sucesso{
+    width: 400px;
+    margin: 10px auto;
+    padding: 2px;
+    background-color: rgba(50,205,50,.3);
+    border: 1px solid rgb(34,139,34);
+
+}
+div.msg-erro{
+    width: 400px;
+    margin: 10px auto;
+    padding: 2px;
+    background-color: rgba(245, 10, 10, 0.521);
+    border: 1px solid rgb(255, 0, 0);
+}
